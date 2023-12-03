@@ -3,12 +3,8 @@
 // All Rights Reserved
 // [2020]-[2023].
 
-using SibJam.Features.Player.Base;
-using SibJam.Features.Player.Data;
-using SibJam.Features.Player.Factories;
 using SibJam.Features.Player.Models;
-using SibJam.Features.Player.Signals;
-using SibJam.Features.Player.States;
+using SibJam.Features.Player.Services;
 using SibJam.Features.Player.Views;
 using UnityEngine;
 using Zenject;
@@ -22,13 +18,9 @@ namespace SibJam.Features.Player.Installers
         public override void InstallBindings()
         {
             Container.Bind<PlayerBase>().FromInstance(_player);
-            InstallSignals();
+            
             InstallModels();
-        }
-
-        private void InstallFactories()
-        {
-            Container.Bind<PlayerStateFactory>().AsSingle();
+            InstallRules();
         }
         
         private void InstallModels()
@@ -36,16 +28,10 @@ namespace SibJam.Features.Player.Installers
             Container.BindInterfacesAndSelfTo<PlayerModel>().AsSingle();
         }
 
-        private void InstallStates()
+        private void InstallRules()
         {
-            Container.Bind<BasePlayerState>()
-                .WithId(PlayerState.Hurt)
-                .To<HurtState>();
+            Container.BindInterfacesTo<PlayerControlRule>().AsSingle();
         }
-        
-        private void InstallSignals()
-        {
-            Container.DeclareSignal<PlayerSignal.LevelUp>();
-        }
+
     }
 }

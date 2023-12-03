@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6637accb007a41f3b1fc467c3bec868a, type: 3}
+  m_Script: {fileID: 11500000, guid: ed1ef86e231c417d9bf2555a1c9040c2, type: 3}
   m_Name: PlayerConfig
   m_EditorClassIdentifier: 
-  <Health>k__BackingField: 0
-  _speed: 0
+  _settingConfigs:
+  - {fileID: 11400000, guid: 0e659861f6f9b40c5906c21a34ebf082, type: 2}
+  - {fileID: 11400000, guid: 05f3b6fc381e14dd3a39335f687ab07c, type: 2}
+  - {fileID: 11400000, guid: 589b8edeeab6f4c968246e36f4863d84, type: 2}
