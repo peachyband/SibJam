@@ -3,6 +3,7 @@
 // All Rights Reserved
 // [2020]-[2023].
 
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace SibJam.Features.Player.Data.Config
@@ -10,11 +11,12 @@ namespace SibJam.Features.Player.Data.Config
     [CreateAssetMenu(fileName = "PlayerConfig", menuName = "Config/Player config")]
     public class PlayerConfig : ScriptableObject
     {
-        [field: SerializeField]
-        public float Health { get; private set; }
-        
-        [SerializeField] private float _speed;
+        [SerializeField] private List<PlayerSettingConfig> _settingConfigs;
+        [SerializeField] private KeyCode _dashKey = KeyCode.Q;
+        [SerializeField] private KeyCode _jumpKey = KeyCode.Space;
 
-        public float Speed => _speed;
+        public List<PlayerSettingConfig> Settings => _settingConfigs;
+        public KeyCode DashKey => _dashKey;
+        public KeyCode JumpKey => _jumpKey;
     }
 }

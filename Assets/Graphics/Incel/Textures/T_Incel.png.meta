@@ -1,0 +1,700 @@
+fileFormatVersion: 2
+guid: ec4fe6d2599b54c7398f9268653f15ca
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: T_Incel_0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2417
+        width: 335
+        height: 427
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a3ac58dd57414af080c732ccd355944
+      internalID: 1316958154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Incel_1
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 2417
+        width: 337
+        height: 415
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b8871acc9af7465689f836943c5a58a
+      internalID: -43805698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Incel_2
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1986
+        width: 335
+        height: 387
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c51357402b94c4b8cbe912a3929653
+      internalID: 479651628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Incel_3
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 1937
+        width: 337
+        height: 396
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb6f5fb0f57647ccb15ad6e8849479e
+      internalID: 367908981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Incel_4
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 1946
+        width: 337
+        height: 417
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715336f32dc354848a99ab15b4d6d786
+      internalID: -1259369630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Incel_5
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 1937
+        width: 335
+        height: 396
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db38000df0a04455d8340c970b300509
+      internalID: 1068349767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Incel_6
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 1456
+        width: 347
+        height: 457
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df25b4e0a4884ffebb4e46f816f3afc
+      internalID: 675434170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Incel_7
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 1478
+        width: 337
+        height: 405
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4bc228a857a14b3a88589711bbebad4
+      internalID: -1528298345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Incel_8
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 498
+        width: 286
+        height: 464
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef34194808ee412288c941006b40d0a
+      internalID: -1497768158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Incel_9
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 498
+        width: 337
+        height: 445
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c50b9575bb64209a94e1c5e60e08dd
+      internalID: -1451945620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Incel_11
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 498
+        width: 335
+        height: 436
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33d81aa63a054181a8123d884ac9003
+      internalID: 1590252690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Incel_43
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 798
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f628d9df851224d779ad9dc7788a2082
+      internalID: 425962895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Incel_16
+      rect:
+        serializedVersion: 2
+        x: 3900
+        y: 498
+        width: 361
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee66a2d7677e439e935f2e1fe91a684
+      internalID: 1979760704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Incel_17
+      rect:
+        serializedVersion: 2
+        x: 4426
+        y: 498
+        width: 258
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bdcf5dd4daa8428582baeb894f7ab21
+      internalID: 671847470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Incel_15
+      rect:
+        serializedVersion: 2
+        x: 3440
+        y: 498
+        width: 322
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d2964a918684e199f3797e08aa08e8
+      internalID: -491372349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Incel_14
+      rect:
+        serializedVersion: 2
+        x: 2950
+        y: 498
+        width: 321
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed30b5e72999844c28ebcd848733c4d1
+      internalID: 698198006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Incel_10
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 476
+        width: 372
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db339feaa2fa4f82bd85e428cc5f1f5
+      internalID: 1034593621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Incel_12
+      rect:
+        serializedVersion: 2
+        x: 1918
+        y: 490
+        width: 472
+        height: 441
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7922122d17d1443f9b5210507b2af79f
+      internalID: -950030056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Incel_13
+      rect:
+        serializedVersion: 2
+        x: 2399
+        y: 480
+        width: 481
+        height: 471
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768515e9235e44035912e5fe9e3fe504
+      internalID: 784465289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      T_Incel_0: 1316958154
+      T_Incel_1: -43805698
+      T_Incel_10: 1034593621
+      T_Incel_100: -259854605
+      T_Incel_101: -988144389
+      T_Incel_102: -443364945
+      T_Incel_103: -2120649301
+      T_Incel_104: 1173649740
+      T_Incel_105: -1774341761
+      T_Incel_106: -1535615735
+      T_Incel_107: -1667621958
+      T_Incel_108: 1851637145
+      T_Incel_109: 657062098
+      T_Incel_11: 1590252690
+      T_Incel_110: -637406349
+      T_Incel_111: 865066986
+      T_Incel_112: -1940713702
+      T_Incel_113: -351509813
+      T_Incel_114: 569393015
+      T_Incel_115: 1790785019
+      T_Incel_116: 45702852
+      T_Incel_117: -1870215237
+      T_Incel_118: 1963707462
+      T_Incel_119: 1663953249
+      T_Incel_12: -950030056
+      T_Incel_120: 561693167
+      T_Incel_121: 1862474656
+      T_Incel_122: 1072613979
+      T_Incel_123: -661310406
+      T_Incel_124: 1498799106
+      T_Incel_125: -16565217
+      T_Incel_126: 1436379066
+      T_Incel_127: -723175164
+      T_Incel_128: 1209351516
+      T_Incel_129: -429911165
+      T_Incel_13: 784465289
+      T_Incel_130: 2001146685
+      T_Incel_131: 422945072
+      T_Incel_132: 1347569613
+      T_Incel_133: 112377895
+      T_Incel_134: 938479543
+      T_Incel_135: 2055433682
+      T_Incel_136: 218509809
+      T_Incel_137: 711610517
+      T_Incel_138: -993141507
+      T_Incel_139: -1671035850
+      T_Incel_14: 698198006
+      T_Incel_140: -1724552782
+      T_Incel_141: -626224345
+      T_Incel_142: 1582432840
+      T_Incel_143: -1456994755
+      T_Incel_144: -1289316921
+      T_Incel_145: 1663738535
+      T_Incel_147: -55892854
+      T_Incel_148: 2136321818
+      T_Incel_149: 1629538039
+      T_Incel_15: -491372349
+      T_Incel_150: -948917228
+      T_Incel_151: 153817688
+      T_Incel_152: 1017598510
+      T_Incel_153: 1994234430
+      T_Incel_154: 716451624
+      T_Incel_155: 1525837193
+      T_Incel_156: 1287709645
+      T_Incel_157: 128632197
+      T_Incel_158: 1152380330
+      T_Incel_159: -1151277089
+      T_Incel_16: 1979760704
+      T_Incel_160: 917177034
+      T_Incel_161: -597481758
+      T_Incel_162: 348027064
+      T_Incel_163: -1235116740
+      T_Incel_164: 735777529
+      T_Incel_17: 671847470
+      T_Incel_18: 1212481285
+      T_Incel_19: -1971860457
+      T_Incel_2: 479651628
+      T_Incel_20: 538783759
+      T_Incel_21: 857818313
+      T_Incel_22: -940290478
+      T_Incel_23: -1773597619
+      T_Incel_24: -1229663708
+      T_Incel_25: 1809665292
+      T_Incel_26: -1393682363
+      T_Incel_27: 146345500
+      T_Incel_28: 686331029
+      T_Incel_29: 1731561140
+      T_Incel_3: 367908981
+      T_Incel_30: 1265127617
+      T_Incel_31: -566159814
+      T_Incel_32: -188240752
+      T_Incel_33: 1726969350
+      T_Incel_34: -2008643700
+      T_Incel_35: 1262305472
+      T_Incel_36: 1183609919
+      T_Incel_37: 41085403
+      T_Incel_38: 1842300333
+      T_Incel_39: -2070747601
+      T_Incel_4: -1259369630
+      T_Incel_40: -1026628197
+      T_Incel_41: 833811669
+      T_Incel_42: 323828746
+      T_Incel_43: 425962895
+      T_Incel_44: -121517084
+      T_Incel_45: -564540585
+      T_Incel_46: -481152186
+      T_Incel_47: -1121010695
+      T_Incel_48: -933561058
+      T_Incel_5: 1068349767
+      T_Incel_51: -1521157096
+      T_Incel_52: 1290696313
+      T_Incel_53: -1406014281
+      T_Incel_54: 246217005
+      T_Incel_55: -1816329428
+      T_Incel_56: 1773907627
+      T_Incel_57: 990094751
+      T_Incel_58: -248194070
+      T_Incel_59: 2118219202
+      T_Incel_6: 675434170
+      T_Incel_60: -1837419663
+      T_Incel_62: -248243636
+      T_Incel_63: -1856022619
+      T_Incel_64: -150416908
+      T_Incel_65: -2115167752
+      T_Incel_66: -432321886
+      T_Incel_67: -1472412887
+      T_Incel_68: 612818593
+      T_Incel_69: -2136672968
+      T_Incel_7: -1528298345
+      T_Incel_70: 987817227
+      T_Incel_71: -761731161
+      T_Incel_72: 724613693
+      T_Incel_73: 677666293
+      T_Incel_74: -1183412580
+      T_Incel_75: -1380122272
+      T_Incel_76: -960992463
+      T_Incel_77: -1217069316
+      T_Incel_78: 283416
+      T_Incel_79: 1212249547
+      T_Incel_8: -1497768158
+      T_Incel_80: -1801009931
+      T_Incel_81: -797412255
+      T_Incel_82: -842429959
+      T_Incel_83: 1487718202
+      T_Incel_84: -1915239343
+      T_Incel_85: 1238267609
+      T_Incel_86: -602446291
+      T_Incel_87: 1514493569
+      T_Incel_88: 63862157
+      T_Incel_89: -1781847778
+      T_Incel_9: -1451945620
+      T_Incel_90: 1686471364
+      T_Incel_91: 652193331
+      T_Incel_92: 261064499
+      T_Incel_93: -236037913
+      T_Incel_94: -1978486058
+      T_Incel_95: -1932565771
+      T_Incel_96: -469867615
+      T_Incel_97: -1855240981
+      T_Incel_98: -1141487615
+      T_Incel_99: -882460197
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
