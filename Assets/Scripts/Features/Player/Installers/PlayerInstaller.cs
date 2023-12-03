@@ -3,6 +3,8 @@
 // All Rights Reserved
 // [2020]-[2023].
 
+using SibJam.Features.Player.Models;
+using SibJam.Features.Player.Signals;
 using SibJam.Features.Player.Views;
 using UnityEngine;
 using Zenject;
@@ -16,6 +18,18 @@ namespace SibJam.Features.Player.Installers
         public override void InstallBindings()
         {
             Container.Bind<PlayerBase>().FromInstance(_player);
+            InstallSignals();
+            InstallModels();
+        }
+
+        private void InstallModels()
+        {
+            Container.BindInterfacesAndSelfTo<PlayerModel>().AsSingle();
+        }
+        
+        private void InstallSignals()
+        {
+            Container.DeclareSignal<PlayerSignal.LevelUp>();
         }
     }
 }
