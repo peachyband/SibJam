@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f95d9c90b8994eb99bd469b7a5f236e1, type: 3}
-  m_Name: ConfigInstaller
+  m_Script: {fileID: 11500000, guid: 6637accb007a41f3b1fc467c3bec868a, type: 3}
+  m_Name: PlayerConfig
   m_EditorClassIdentifier: 
-  _configs:
-  - {fileID: 11400000, guid: 0e659861f6f9b40c5906c21a34ebf082, type: 2}
+  <Health>k__BackingField: 0
+  _speed: 0
