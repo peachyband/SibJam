@@ -7,6 +7,9 @@ namespace SibJam.Features.Weapon.Models
 {
     public class WeaponModel
     {
-        
+        public void Attack()
+        {
+            
+        }
     }
 }

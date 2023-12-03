@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: ConfigInstaller
   m_EditorClassIdentifier: 
   _configs:
-  - {fileID: 11400000, guid: 0e659861f6f9b40c5906c21a34ebf082, type: 2}
+  - {fileID: 11400000, guid: cde6789b5d9c54002b6eb5f5946717c5, type: 2}
