@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6335b7dbb0d7b9c4ba9e251b16c269ce, type: 3}
+  m_Name: SettingsConfig
+  m_EditorClassIdentifier: 
+  <AudioMixer>k__BackingField: {fileID: 24100000, guid: 0d62c40981a20fd499b9d861acdc737d,
+    type: 2}
+  <MasterVolumeParameterName>k__BackingField: MasterVolume
+  <BgmVolumeParameterName>k__BackingField: BGMVolume
+  <SfxVolumeParameterName>k__BackingField: SFXVolume
+  m_defaultMasterVolume: 1
+  m_defaultBgmVolume: 1
+  m_defaultSfxVolume: 1
