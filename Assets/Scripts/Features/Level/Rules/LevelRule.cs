@@ -45,7 +45,7 @@ namespace SibJam.Features.Level.Rules
 
             _signalBus
                 .GetStream<LevelSignals.RestartLevel>()
-                .Subscribe(_ => SceneManager.LoadScene("PlayerTest"))
+                .Subscribe(_ => SceneManager.LoadScene("Level"))
                 .AddTo(_compositeDisposable);
 
             _signalBus
