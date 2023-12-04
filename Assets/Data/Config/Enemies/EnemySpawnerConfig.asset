@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c403d052a309a240ae9c964d021c464, type: 3}
+  m_Name: EnemySpawnerConfig
+  m_EditorClassIdentifier: 
+  <EnemyReddit>k__BackingField: {fileID: 2994905023976598444, guid: 356097f0e2f052f41b8edc1d7ae1d55a,
+    type: 3}
+  <RedditPerLevelCount>k__BackingField: 020000000300000004000000
+  <Enemy4chan>k__BackingField: {fileID: 300489648865316388, guid: f50ef42931365cc4093722836554c82c,
+    type: 3}
+  <FChanPerLevelCount>k__BackingField: 000000000100000002000000
