@@ -4,12 +4,10 @@
 // [2020]-[2023].
 
 using System;
-using System.Collections;
 using Cysharp.Threading.Tasks;
 using SibJam.Features.Player.Data.Config;
 using SibJam.Features.Weapon.Models;
 using UniRx;
-using UnityEngine;
 using Zenject;
 
 namespace SibJam.Features.Player.Models
@@ -19,8 +17,6 @@ namespace SibJam.Features.Player.Models
         public bool Invincible { get; private set; }
         public PlayerSettingConfig PlayerSetting { get; private set; }
         public float MoveDirection => _moveDirectionProperty.Value;
-        
-        private readonly SignalBus _signalBus;
 
         private readonly ReactiveProperty<int> _levelProperty = new (-1);
         private readonly ReactiveProperty<float> _speedProperty = new ();
@@ -37,10 +33,10 @@ namespace SibJam.Features.Player.Models
         public event PlayerHandler OnJump;
         public event PlayerHandler OnDash;
         public event PlayerHandler OnDeath;
+        public event PlayerHandler OnInteract;
         
-        private PlayerModel(SignalBus signalBus, PlayerConfig playerConfig)
+        private PlayerModel(PlayerConfig playerConfig)
         {
-            _signalBus = signalBus;
             _playerConfig = playerConfig;
         }
         
@@ -67,6 +63,11 @@ namespace SibJam.Features.Player.Models
         public void Dash()
         {
             OnDash?.Invoke();
+        }
+
+        public void Interact()
+        {
+            OnInteract?.Invoke();
         }
 
         public void UpgradeLevel()
@@ -97,11 +98,6 @@ namespace SibJam.Features.Player.Models
         public IObservable<int> OnLevelChange()
         {
             return _levelProperty.AsObservable();
-        }
-        
-        public IObservable<float> OnDirectionChange()
-        {
-            return _moveDirectionProperty.AsObservable();
         }
         
         public IObservable<int> OnHealthChange()

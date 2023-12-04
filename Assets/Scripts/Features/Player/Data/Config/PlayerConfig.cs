@@ -14,9 +14,11 @@ namespace SibJam.Features.Player.Data.Config
         [SerializeField] private List<PlayerSettingConfig> _settingConfigs;
         [SerializeField] private KeyCode _dashKey = KeyCode.Q;
         [SerializeField] private KeyCode _jumpKey = KeyCode.Space;
+        [SerializeField] private KeyCode _interactionKey = KeyCode.E;
 
         public List<PlayerSettingConfig> Settings => _settingConfigs;
         public KeyCode DashKey => _dashKey;
         public KeyCode JumpKey => _jumpKey;
+        public KeyCode InteractionKey => _interactionKey;
     }
 }

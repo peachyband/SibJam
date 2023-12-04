@@ -4,7 +4,8 @@
 // [2020]-[2023].
 
 using SibJam.Features.Player.Models;
-using SibJam.Features.Player.Services;
+using SibJam.Features.Player.Rules;
+using SibJam.Features.Player.Signals;
 using SibJam.Features.Player.Views;
 using UnityEngine;
 using Zenject;
@@ -20,6 +21,7 @@ namespace SibJam.Features.Player.Installers
             Container.Bind<PlayerBase>().FromInstance(_player);
             
             InstallModels();
+            InstallSignals();
             InstallRules();
         }
         
@@ -33,5 +35,9 @@ namespace SibJam.Features.Player.Installers
             Container.BindInterfacesTo<PlayerControlRule>().AsSingle();
         }
 
+        private void InstallSignals()
+        {
+            Container.DeclareSignal<PlayerSignals.ToggleControls>();
+        }
     }
 }
