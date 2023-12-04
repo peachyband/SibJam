@@ -7,6 +7,11 @@ namespace SibJam.Features.Level.Signals
 {
     public sealed class LevelSignals
     {
+        public class GrassTouched
+        {
+            
+        }
+        
         public class PillCollected
         {
             

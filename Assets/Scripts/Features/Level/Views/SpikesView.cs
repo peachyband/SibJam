@@ -14,14 +14,22 @@ namespace SibJam.Features.Level.Views
     {
         [SerializeField] private int _damage;
         [SerializeField] private float _damageCooldown;
+
+        private float _damageTimer;
         
-        private async void OnTriggerStay2D(Collider2D other)
+        private void Update()
+        {
+            _damageTimer += Time.deltaTime;
+        }
+
+        private void OnTriggerStay2D(Collider2D other)
         {
             var player = other.GetComponent<PlayerBase>();
             if (player == null) return;
 
-            await UniTask.Delay(TimeSpan.FromSeconds(_damageCooldown));
+            if (!(_damageTimer >= _damageCooldown)) return;
             player.TakeDamage(_damage);
+            _damageTimer = 0f;
         }
     }
 }

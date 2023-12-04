@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: LevelConfig
   m_EditorClassIdentifier: 
   _pillsTimeout: 10
-  _collectiblesToGet: 4
+  _grassTimeout: 10
+  _collectiblesToGet: 3
   _collectiblePool:
   - {fileID: 3349908188865885273, guid: d9cb9ee2ad63246399b74ca18a62467a, type: 3}
   _grassView: {fileID: -3248273683305694119, guid: e454c4b33cc754d1f921170f3a51007d,

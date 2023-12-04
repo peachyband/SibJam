@@ -13,9 +13,10 @@ namespace SibJam.Features.Player.Data.Config
     {
         [SerializeField] private int _health;
         [SerializeField] private float _speed;
-        [SerializeField] private float _dashSpeed;
         [SerializeField] private float _dashTime;
+        [SerializeField] private float _dashSpeed;
         [SerializeField] private float _jumpForce;
+        [SerializeField] private float _punchForce;
         [SerializeField] private float _damageCooldown;
         [SerializeField] private RuntimeAnimatorController _animatorController;
 
@@ -31,6 +32,7 @@ namespace SibJam.Features.Player.Data.Config
         public float DashTime => _dashTime;
         public float DashSpeed => _dashSpeed;
         public float JumpForce => _jumpForce;
+        public float PunchForce => _punchForce;
         public float DamageCooldown => _damageCooldown;
         public RuntimeAnimatorController AnimatorController => _animatorController;
 

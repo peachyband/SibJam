@@ -29,7 +29,7 @@ namespace SibJam.Features.Level.Models
                 Random.Range(BottomRight.y, TopRight.y));
         }
 
-        public Vector2 GetCentre() => new (BottomLeft.x + BottomRight.x / 2f, 
-            BottomLeft.y + TopLeft.y / 2f);
+        public Vector2 GetCentre() => new (Mathf.Lerp(BottomLeft.x, BottomRight.x, 0.5f), 
+            Mathf.Lerp(BottomLeft.y, TopRight.y, 0.5f));
     }
 }

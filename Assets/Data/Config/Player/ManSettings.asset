@@ -14,8 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 100
   _speed: 7
-  _dashSpeed: 30
   _dashTime: 0.2
-  _jumpForce: 3
+  _dashSpeed: 30
+  _jumpForce: 12
+  _punchForce: 7
   _damageCooldown: 1
-  _animatorController: {fileID: 9100000, guid: 636c7d136cb2c428fbe6fd8ef3dc6415, type: 2}
+  _animatorController: {fileID: 9100000, guid: 222abeb1fc42c4cffa8a2708e3dabd6c, type: 2}
+  _dashSound: {fileID: 8300000, guid: e30d7402a6b3c48bf8e51a3ca4225218, type: 3}
+  _hurtSound: {fileID: 8300000, guid: 64fa90ca14a9a418392a1c7eec3da516, type: 3}
+  _jumpSound: {fileID: 0}
+  _fallSound: {fileID: 0}
+  _levelUpSound: {fileID: 8300000, guid: 1755b367216ee4fea96fab090a21b427, type: 3}
+  _interactionSound: {fileID: 8300000, guid: 11fe7379e2414457689800dbcad940d9, type: 3}

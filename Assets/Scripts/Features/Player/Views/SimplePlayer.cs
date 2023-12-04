@@ -7,6 +7,9 @@ namespace SibJam.Features.Player.Views
 {
     public class SimplePlayer : PlayerBase
     {
-        
+        protected override void Dispose()
+        {
+            Destroy(gameObject);
+        }
     }
 }
