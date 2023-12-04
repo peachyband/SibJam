@@ -18,6 +18,7 @@ MonoBehaviour:
   _dashSpeed: 40
   _jumpForce: 15
   _punchForce: 5
+  _weapon: 1
   _damageCooldown: 1
   _animatorController: {fileID: 9100000, guid: 7bbd9621646bf4a70baedf71abe60fa3, type: 2}
   _dashSound: {fileID: 8300000, guid: e30d7402a6b3c48bf8e51a3ca4225218, type: 3}

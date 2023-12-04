@@ -4,7 +4,9 @@
 // [2020]-[2023].
 
 using System;
+using System.Linq;
 using Cysharp.Threading.Tasks;
+using SibJam.Features.Enemies;
 using UnityEngine;
 
 namespace SibJam.Features.Weapon.Views
@@ -19,8 +21,14 @@ namespace SibJam.Features.Weapon.Views
         public async void Explode()
         {
             var colliders = Physics2D.OverlapCircleAll(transform.position, _radius);
+            var enemies = colliders
+                .Select(other => other.GetComponent<EnemyBase>())
+                .Where(other => other != null)
+                .ToList();
             
-            
+            foreach (var enemy in enemies)
+                enemy.Kill();
+
             _audioSource.clip = _explosionSound;
             _audioSource.Play();
             _particleSystem.Play();

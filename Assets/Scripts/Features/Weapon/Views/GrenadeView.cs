@@ -7,6 +7,7 @@ using System;
 using System.Linq;
 using Cysharp.Threading.Tasks;
 using DG.Tweening;
+using SibJam.Features.Enemies;
 using SibJam.Features.Level.Models;
 using UnityEngine;
 using Zenject;
@@ -18,23 +19,21 @@ namespace SibJam.Features.Weapon.Views
         [SerializeField] private ExplosionView _explosion;
         [SerializeField] private float _activationTimeout;
         [SerializeField] private float _radius;
-        
-        private LevelModel _levelModel;
-        
-        [Inject]
-        public void Construct(LevelModel levelModel)
+
+        public async void Launch(Vector2 direction)
         {
-            _levelModel = levelModel;
-        }
-        
-        public async void Launch()
-        {
-            transform.DOMove(_levelModel.GetCentre(), 0.2f);
+            transform.DOMove(direction, 0.2f);
             await UniTask.Delay(TimeSpan.FromSeconds(_activationTimeout));
             var colliders = Physics2D.OverlapCircleAll(transform.position, _radius);
-
-            var target = colliders.First();
-            transform.DOMove(target.transform.position, 0.5f);
+            var enemies = colliders
+                .Select(other => other.GetComponent<EnemyBase>())
+                .Where(other => other != null)
+                .ToList();
+            if (!enemies.Any()) return;
+            
+            var target = enemies.First();
+            transform.DOMove(target.transform.position, 0.1f);
+            await UniTask.Delay(TimeSpan.FromSeconds(0.15f));
             _explosion.transform.SetParent(null);
             _explosion.gameObject.SetActive(true);
             _explosion.Explode();

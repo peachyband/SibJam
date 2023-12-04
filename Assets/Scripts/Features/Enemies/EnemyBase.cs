@@ -9,5 +9,10 @@ namespace SibJam.Features.Enemies
     {
         [SerializeField]
         protected EnemyConfig _config;
+
+        public void Kill()
+        {
+            Destroy(gameObject);
+        }
     }
 }

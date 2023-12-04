@@ -3,7 +3,6 @@
 // All Rights Reserved
 // [2020]-[2023].
 
-using SibJam.Features.Weapon.Models;
 using UnityEngine;
 
 namespace SibJam.Features.Weapon.Views
@@ -12,18 +11,15 @@ namespace SibJam.Features.Weapon.Views
     {
         [SerializeField] private GrenadeView _grenade;
 
-        public GrenadeLauncherView(WeaponModel model) : base(model)
-        { }
-
-        protected override void Attack()
+        protected override void Attack(Vector2 direction)
         {
-            SpawnGrenade();
+            SpawnGrenade(direction);
         }
 
-        private void SpawnGrenade()
+        private void SpawnGrenade(Vector2 direction)
         {
-            var grenade = Instantiate(_grenade);
-            grenade.Launch();
+            var grenade = Instantiate(_grenade, transform.position, Quaternion.identity);
+            grenade.Launch(direction);
         }
     }
 }

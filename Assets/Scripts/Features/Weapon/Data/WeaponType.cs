@@ -7,6 +7,7 @@ namespace SibJam.Features.Weapon.Data
 {
     public enum WeaponType
     {
+        None,
         Grenade
     }
 }
