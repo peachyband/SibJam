@@ -392,7 +392,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5103136826933198921}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8826631991605343541}
+        m_TargetAssemblyTypeName: SibJam.Features.Info.Views.EndChoiceWindow, SibJam.Scripts
+        m_MethodName: OnNegative
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3845929900499792180
 GameObject:
   m_ObjectHideFlags: 0
@@ -648,7 +660,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 269325994514805597}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8826631991605343541}
+        m_TargetAssemblyTypeName: SibJam.Features.Info.Views.EndChoiceWindow, SibJam.Scripts
+        m_MethodName: OnPositive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4968475801624561225
 GameObject:
   m_ObjectHideFlags: 0

@@ -32,9 +32,9 @@ namespace SibJam.Features.Player.Views
         
         private PlayerModel _model;
         private float _originalGravity;
-        private int _jumpCount; 
-        
+        private int _jumpCount;
         private bool _isDashing;
+        
         private static readonly int JumpPath = Animator.StringToHash("JumpPath");
         private static readonly int Speed = Animator.StringToHash("Speed");
         private static readonly int Health = Animator.StringToHash("Health");
