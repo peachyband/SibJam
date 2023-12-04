@@ -20,18 +20,16 @@ namespace SibJam.Features.Info.Services
         
         private readonly CanvasPresenter _canvasPresenter;
         private readonly WindowFactory _windowFactory;
-        private readonly Camera _camera;
 
         private readonly SignalBus _signalBus;
 
         private InfoService(CanvasPresenter canvasPresenter,
             WindowFactory windowFactory,
-            Camera camera, SignalBus signalBus)
+            SignalBus signalBus)
         {
             _canvasPresenter = canvasPresenter;
             _windowFactory = windowFactory;
             _signalBus = signalBus;
-            _camera = camera;
         }
         
         public void ShowWindow(WindowType type)
@@ -51,5 +49,7 @@ namespace SibJam.Features.Info.Services
                     _signalBus.TryFire(new PlayerSignals.ToggleControls(true));
                 });
         }
+
+        public bool IsPresenting() => _currentWindow != null;
     }
 }

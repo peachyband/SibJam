@@ -22,3 +22,12 @@ MonoBehaviour:
   - _type: 2
     _window: {fileID: 8826631991605343541, guid: 8e88370fa84254702b14700bdabdef1b,
       type: 3}
+  - _type: 3
+    _window: {fileID: 3219019772098619290, guid: 256fd2fa1b5bd47f9a907769c311f01b,
+      type: 3}
+  - _type: 7
+    _window: {fileID: 3219019772098619290, guid: 7f01db8a9535b46b4855d9b41b9d5f17,
+      type: 3}
+  - _type: 4
+    _window: {fileID: 3219019772098619290, guid: 00ea408e1b4f64423a454b78dcc2fa25,
+      type: 3}
