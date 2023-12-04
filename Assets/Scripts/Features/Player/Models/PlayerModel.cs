@@ -12,6 +12,7 @@ using SibJam.Features.Weapon.Data.Config;
 using SibJam.Features.Weapon.Factories;
 using SibJam.Features.Weapon.Models;
 using UniRx;
+using UnityEngine;
 using Zenject;
 
 namespace SibJam.Features.Player.Models
@@ -19,6 +20,7 @@ namespace SibJam.Features.Player.Models
     public class PlayerModel : IInitializable, IDisposable
     {
         public bool Invincible { get; private set; }
+        public Vector2 CurrentPosition { get; private set; }
         public PlayerSettingConfig PlayerSetting { get; private set; }
         public float MoveDirection => _moveDirectionProperty.Value;
 
@@ -132,6 +134,11 @@ namespace SibJam.Features.Player.Models
             return _weaponProperty.AsObservable();
         }
 
+        public void SetPosition(Vector2 position)
+        {
+            CurrentPosition = position;
+        }
+        
         public float GetSpeed()
         {
             return _speedProperty.Value;

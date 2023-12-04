@@ -153,6 +153,7 @@ namespace SibJam.Features.Player.Views
                 _rigidbody.velocity.y);
             transform.localScale = Mathf.Sign(_model.MoveDirection) * Vector2.right + Vector2.up;
             _animator.SetFloat(Speed, Mathf.Abs(_rigidbody.velocity.x));
+            _model.SetPosition(transform.position);
         }
 
         private void Jump()
