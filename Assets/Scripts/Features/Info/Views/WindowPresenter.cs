@@ -11,11 +11,15 @@ namespace SibJam.Features.Info.Views
 {
     public abstract class WindowPresenter : MonoBehaviour
     {
+        [SerializeField] private RectTransform _rectTransform;
+        
         public abstract IObservable<Unit> OnClick();
 
         public void Dispose()
         {
             Destroy(gameObject);
         }
+
+        public RectTransform RectTransform => _rectTransform;
     }
 }
