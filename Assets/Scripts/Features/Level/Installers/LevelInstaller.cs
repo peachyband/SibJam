@@ -43,6 +43,9 @@ namespace SibJam.Features.Level.Installers
             Container.DeclareSignal<LevelSignals.LevelFailed>();
             Container.DeclareSignal<LevelSignals.LevelPassed>();
             Container.DeclareSignal<LevelSignals.PillCollected>();
+            Container.DeclareSignal<LevelSignals.RestartLevel>();
+            Container.DeclareSignal<LevelSignals.ToMenu>();
+            Container.DeclareSignal<LevelSignals.GrassTouched>();
         }
     }
 }

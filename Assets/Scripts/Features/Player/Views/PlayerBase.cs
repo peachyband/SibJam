@@ -3,13 +3,17 @@
 // All Rights Reserved
 // [2020]-[2023].
 
+using System;
 using System.Collections;
 using System.Linq;
+using Cysharp.Threading.Tasks;
+using DG.Tweening;
 using SibJam.Base;
 using SibJam.Features.Player.Models;
 using UniRx;
 using UnityEngine;
 using Zenject;
+using Random = UnityEngine.Random;
 
 namespace SibJam.Features.Player.Views
 {
@@ -24,6 +28,7 @@ namespace SibJam.Features.Player.Views
         [SerializeField] private Rigidbody2D _rigidbody;
         [SerializeField] private AudioSource _audioSource;
         [SerializeField] private CircleCollider2D _interaction;
+        [SerializeField] private SpriteRenderer _spriteRenderer;
         
         private PlayerModel _model;
         private float _originalGravity;
@@ -33,6 +38,7 @@ namespace SibJam.Features.Player.Views
         private static readonly int JumpPath = Animator.StringToHash("JumpPath");
         private static readonly int Speed = Animator.StringToHash("Speed");
         private static readonly int Health = Animator.StringToHash("Health");
+        private static readonly int IsDash = Animator.StringToHash("Dash");
 
         [Inject]
         public void Construct(PlayerModel model)
@@ -46,8 +52,8 @@ namespace SibJam.Features.Player.Views
 
             _model.OnJump += Jump;
             _model.OnDash += MakeDash;
+            _model.OnDeath += Dispose;
             _model.OnInteract += Interact;
-            _model.OnDeath += () => Destroy(gameObject);
             
             _model
                 .OnLevelChange()
@@ -75,7 +81,9 @@ namespace SibJam.Features.Player.Views
 
             var interactables = colliders
                 .Select(other => other.GetComponent<IInteractable>())
+                .Where(other => other != null)
                 .ToList();
+            
             if (!interactables.Any()) return;
 
             var interactable = interactables.First();
@@ -91,6 +99,17 @@ namespace SibJam.Features.Player.Views
             if (_invincible) return;
             _audioSource.clip = _model.PlayerSetting.HurtSound;
             _audioSource.Play();
+            
+            _rigidbody.velocity += Vector2.up * _model.PlayerSetting.PunchForce +
+                                   Vector2.right * Random.Range(-1f, 1f);
+            
+            if (_spriteRenderer != null)
+            {
+                _spriteRenderer.DOColor(Color.red, 0.1f);
+                await UniTask.Delay(TimeSpan.FromSeconds(0.1f));
+                _spriteRenderer.DOColor(Color.white, 0.1f);   
+            }
+            
             await _model.TakeDamage(damage);
         }
         
@@ -139,6 +158,7 @@ namespace SibJam.Features.Player.Views
         {
             if (_model.PlayerSetting.DashTime == 0f) yield break;
             _isDashing = true;
+            _animator.SetBool(IsDash, _isDashing);
             var direction = _model.MoveDirection;
             _rigidbody.gravityScale = 0f;
             _rigidbody.velocity = new Vector2(direction * _model.PlayerSetting.DashSpeed, 0f);
@@ -147,6 +167,7 @@ namespace SibJam.Features.Player.Views
             yield return new WaitForSeconds(_model.PlayerSetting.DashTime);
             _rigidbody.gravityScale = _originalGravity;
             _isDashing = false;
+            _animator.SetBool(IsDash, _isDashing);
         }
 
         private bool IsGrounded()
@@ -159,5 +180,7 @@ namespace SibJam.Features.Player.Views
             Gizmos.color = Color.green;
             Gizmos.DrawSphere(_groundCheck.position, 0.4f);
         }
+
+        protected abstract void Dispose();
     }
 }

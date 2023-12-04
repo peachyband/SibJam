@@ -4,7 +4,7 @@
 // [2020]-[2023].
 
 using SibJam.Features.Player.Models;
-using SibJam.Features.Player.Services;
+using SibJam.Features.Player.Rules;
 using SibJam.Features.Player.Signals;
 using Zenject;
 

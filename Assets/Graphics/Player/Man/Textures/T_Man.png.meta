@@ -1,0 +1,679 @@
+fileFormatVersion: 2
+guid: 1e4733576931e46e78d7d08cbed5635e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: T_Man_0
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 2418
+        width: 244
+        height: 425
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da312eb5444734ca8a2065daecdb97ce
+      internalID: -1364427581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Man_1
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 2418
+        width: 244
+        height: 413
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 812d21c5420ea40b98790a2541a387bc
+      internalID: 566792757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Man_2
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 1968
+        width: 265
+        height: 403
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c48440d5a3705465a9f2d4ead585f957
+      internalID: 261344761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Man_3
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 1938
+        width: 243
+        height: 403
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1de3e0edeb8a45bc91e2404c86a54bf
+      internalID: 858488722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Man_4
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 1968
+        width: 253
+        height: 403
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb4c9fdadf184d8d9346dad4a80ed57
+      internalID: -320219858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Man_5
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 1938
+        width: 243
+        height: 384
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eaf5385cde004874aaef94e67e60f1e
+      internalID: -1167216514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Man_6
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 1488
+        width: 244
+        height: 424
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae44bc1c433454fc7883eb68efd53066
+      internalID: 2070809595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Man_7
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 1467
+        width: 312
+        height: 415
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7354e4813b0744751845fdd1dc70fe19
+      internalID: -1990516984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Man_8
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 977
+        width: 311
+        height: 436
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b0cb68d5219048db8a24450af1acaed
+      internalID: -1905728587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Man_9
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 977
+        width: 483
+        height: 436
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b04511e171da74dd1a7b5b22a357e011
+      internalID: 2142706303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Man_10
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 499
+        width: 272
+        height: 462
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d941ab0170147c0841fe4fbc8e1a17
+      internalID: -1097186328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Man_11
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 499
+        width: 253
+        height: 443
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6e82d1d852a439db7c47e06121552a
+      internalID: -1162574006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Man_12
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 499
+        width: 244
+        height: 422
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 929aff935046645b2916843092d869f4
+      internalID: -1223684109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Man_13
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 481
+        width: 293
+        height: 460
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40afee7c389954c71a5440098f019b55
+      internalID: -527311462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Man_18
+      rect:
+        serializedVersion: 2
+        x: 3900
+        y: 499
+        width: 360
+        height: 302
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e99005e46754c485e9d430ce7b958149
+      internalID: -621946399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Man_19
+      rect:
+        serializedVersion: 2
+        x: 4427
+        y: 502
+        width: 256
+        height: 302
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d0e72b2f9ab44c4f81cdda1fc434246
+      internalID: -1100844682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Man_17
+      rect:
+        serializedVersion: 2
+        x: 3440
+        y: 499
+        width: 318
+        height: 284
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4ce9944193aa4011bda1c33d612664b
+      internalID: -703603677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Man_16
+      rect:
+        serializedVersion: 2
+        x: 2949
+        y: 501
+        width: 321
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f0372669ce94c1287c9a0aa985949e
+      internalID: 2008742106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Man_14
+      rect:
+        serializedVersion: 2
+        x: 1918
+        y: 480
+        width: 434
+        height: 462
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 931fdef752786471db8039bd09aa3b19
+      internalID: -356211767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Man_15
+      rect:
+        serializedVersion: 2
+        x: 2419
+        y: 480
+        width: 373
+        height: 462
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cabe37500cc24f9f9cb24a90e4a424d
+      internalID: -992172853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5fde0034b24b54410a32bb8983cf68c2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      T_Man_0: -1364427581
+      T_Man_1: 566792757
+      T_Man_10: -1097186328
+      T_Man_100: -296838309
+      T_Man_101: 1972970605
+      T_Man_102: -1498052416
+      T_Man_103: 734774650
+      T_Man_105: 1290313121
+      T_Man_106: 904017860
+      T_Man_107: 1897767390
+      T_Man_108: 1623421871
+      T_Man_109: -47300554
+      T_Man_11: -1162574006
+      T_Man_110: 215016075
+      T_Man_111: -1572785018
+      T_Man_112: -654167181
+      T_Man_113: -874207817
+      T_Man_114: 1366116843
+      T_Man_115: 878287612
+      T_Man_116: -1168575616
+      T_Man_117: -1070224145
+      T_Man_118: -120694739
+      T_Man_119: -872662597
+      T_Man_12: -1223684109
+      T_Man_120: -833884073
+      T_Man_121: 1147636074
+      T_Man_122: -1377091813
+      T_Man_123: -2103436562
+      T_Man_124: 930541449
+      T_Man_13: -527311462
+      T_Man_14: -356211767
+      T_Man_15: -992172853
+      T_Man_16: 2008742106
+      T_Man_17: -703603677
+      T_Man_18: -621946399
+      T_Man_19: -1100844682
+      T_Man_2: 261344761
+      T_Man_20: -175228138
+      T_Man_21: -37655920
+      T_Man_22: 2143959429
+      T_Man_23: 402559321
+      T_Man_24: -2139376600
+      T_Man_25: -1562194501
+      T_Man_26: 1968078697
+      T_Man_27: -440184002
+      T_Man_28: 1905230254
+      T_Man_29: -1881843212
+      T_Man_3: 858488722
+      T_Man_30: 1527854863
+      T_Man_31: -247386476
+      T_Man_32: -487682809
+      T_Man_33: -1961060913
+      T_Man_34: 1394969543
+      T_Man_35: -934648954
+      T_Man_36: 1662266016
+      T_Man_37: 1873942816
+      T_Man_38: -244361627
+      T_Man_39: 1381743428
+      T_Man_4: -320219858
+      T_Man_40: -537148766
+      T_Man_41: -1739534187
+      T_Man_42: -141805801
+      T_Man_43: -1108537200
+      T_Man_44: 1357556680
+      T_Man_45: 1071030480
+      T_Man_46: -1090707592
+      T_Man_47: 152945030
+      T_Man_48: 145352668
+      T_Man_49: -245678675
+      T_Man_5: -1167216514
+      T_Man_50: 1820311937
+      T_Man_52: 1069093958
+      T_Man_53: -1448615239
+      T_Man_54: 2028029380
+      T_Man_55: 360769786
+      T_Man_58: -860768408
+      T_Man_59: 1916831258
+      T_Man_6: 2070809595
+      T_Man_60: 1146314008
+      T_Man_62: -1816747510
+      T_Man_63: 1412529784
+      T_Man_64: 325198747
+      T_Man_66: -820599682
+      T_Man_67: -2023961836
+      T_Man_68: -717419195
+      T_Man_69: 461021773
+      T_Man_7: -1990516984
+      T_Man_70: 677686245
+      T_Man_71: -160704071
+      T_Man_72: -1543211572
+      T_Man_73: 1544430675
+      T_Man_74: 818378790
+      T_Man_75: -1853602570
+      T_Man_76: -2068573761
+      T_Man_77: -919548562
+      T_Man_78: 1615769391
+      T_Man_79: 209251400
+      T_Man_8: -1905728587
+      T_Man_80: 666796559
+      T_Man_81: 1894000351
+      T_Man_82: 882697643
+      T_Man_83: -1764833367
+      T_Man_84: -420572163
+      T_Man_85: 439969978
+      T_Man_86: 1708340474
+      T_Man_87: -774780693
+      T_Man_88: 202206514
+      T_Man_89: -12449716
+      T_Man_9: 2142706303
+      T_Man_90: -2094536211
+      T_Man_91: -807664822
+      T_Man_92: 916246182
+      T_Man_93: 1441337663
+      T_Man_94: 708280365
+      T_Man_95: -62061447
+      T_Man_96: -1795556141
+      T_Man_97: -257088296
+      T_Man_98: 1552547898
+      T_Man_99: -2048035002
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

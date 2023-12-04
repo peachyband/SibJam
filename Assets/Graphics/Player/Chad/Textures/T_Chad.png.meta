@@ -1,0 +1,840 @@
+fileFormatVersion: 2
+guid: b61716cbbfb9144a3a9977f90d65a1f9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: T_Chad_0
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 2418
+        width: 284
+        height: 462
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8feaf3b5bda9458db247f5acf6d7446
+      internalID: -1631523026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Chad_1
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 2418
+        width: 286
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09dedfb10d79d4235840a7ccb5a3af36
+      internalID: 1974114970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Chad_2
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1959
+        width: 305
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55e72c18e05e47c1917ed390c62069d
+      internalID: -256996639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Chad_3
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 1938
+        width: 286
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e134f06817bdb467bb72798aaa63df6a
+      internalID: 862751834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Chad_4
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 1938
+        width: 302
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 893fe97fdac2b442faed9e0cd517b6c3
+      internalID: -480290437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Chad_5
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 1938
+        width: 284
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead0d8d62d98246ab858ef33e438a14e
+      internalID: -339986563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Chad_6
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 1479
+        width: 314
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3cf92e50a6dd49c29a99bc2c764dbd4
+      internalID: 1029647312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Chad_7
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 1497
+        width: 304
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17bf1be7687af4a82950363836dd1665
+      internalID: -1481065110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Chad_8
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 977
+        width: 376
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca77eea9400a48ae852c26e044227d7
+      internalID: -1753393764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Chad_9
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 977
+        width: 483
+        height: 424
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cbaaaed2d9b14026966238f1693f5b3
+      internalID: 1967031116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Chad_10
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 499
+        width: 433
+        height: 462
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2acd660594bd9405c80de22b60af4deb
+      internalID: 738317209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Chad_11
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 499
+        width: 375
+        height: 462
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6768b684c99e74bfaa88a379c0d19515
+      internalID: -828073700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Chad_12
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 499
+        width: 354
+        height: 462
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf43d14a45a174bdd9f6ae893b52a184
+      internalID: 1187955321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Chad_13
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 490
+        width: 393
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 686e5e60834b646baaf77aca5f09c99a
+      internalID: 1973559601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Chad_18
+      rect:
+        serializedVersion: 2
+        x: 3899
+        y: 499
+        width: 360
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c538e3610eb841a39b229ad40a3dd41
+      internalID: 912168522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Chad_
+      rect:
+        serializedVersion: 2
+        x: 4427
+        y: 499
+        width: 256
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde07ea42516c495faf20a92a19816ef
+      internalID: 654192815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Chad_17
+      rect:
+        serializedVersion: 2
+        x: 3439
+        y: 499
+        width: 320
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90eb1bbabe67145369836c7d47a13006
+      internalID: 586176932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Chad_70
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 717
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d972a6fb61674cb6b10ca073dc51944
+      internalID: -1790196499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Chad_84
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 677
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 485c6572d4471436a9817b882b98723a
+      internalID: -906095999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Chad_16
+      rect:
+        serializedVersion: 2
+        x: 2949
+        y: 499
+        width: 320
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97521450131e34c8084ea9034f3c99fc
+      internalID: 1653922752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Chad_19
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 19
+        width: 363
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d512730e31a4437596dc11589b525c8
+      internalID: 954725240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Chad_20
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 19
+        width: 305
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e30cfb6ef5041db85750c2576925f2
+      internalID: -84063201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Chad_21
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 19
+        width: 384
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c8b7bcc58e642cfafbda30739b1c37
+      internalID: -1486204744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Chad_22
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 19
+        width: 383
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa8f7883263248098d38698dff01012
+      internalID: -93489489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Chad_14
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 492
+        width: 387
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d690f70640d4943d78e2efa4d9018996
+      internalID: -2023571893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Chad_15
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 491
+        width: 433
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a56bf8abfea8414fab72edd86bc14a7
+      internalID: 1630198925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c64f4315192e14353b78cad1077db2cf
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      T_Chad_: 654192815
+      T_Chad_0: -1631523026
+      T_Chad_1: 1974114970
+      T_Chad_10: 738317209
+      T_Chad_100: -1845242094
+      T_Chad_101: -447658775
+      T_Chad_102: -764616346
+      T_Chad_103: 553929002
+      T_Chad_104: -433123372
+      T_Chad_105: 524753180
+      T_Chad_106: -1747601677
+      T_Chad_107: -314776929
+      T_Chad_108: -1475524011
+      T_Chad_109: -62487321
+      T_Chad_11: -828073700
+      T_Chad_110: 885822753
+      T_Chad_111: -764847027
+      T_Chad_112: 1597882954
+      T_Chad_113: 1769980244
+      T_Chad_114: -1960760274
+      T_Chad_115: 1506407411
+      T_Chad_116: -453510336
+      T_Chad_117: 194076737
+      T_Chad_118: 1890488694
+      T_Chad_119: 1633794093
+      T_Chad_12: 1187955321
+      T_Chad_121: -1942117899
+      T_Chad_122: -999182575
+      T_Chad_123: -2111293257
+      T_Chad_124: -1875329597
+      T_Chad_125: -850807855
+      T_Chad_126: 443644940
+      T_Chad_127: -1868795722
+      T_Chad_128: -39285458
+      T_Chad_129: -669773810
+      T_Chad_13: 1973559601
+      T_Chad_130: -1683172399
+      T_Chad_132: 298244941
+      T_Chad_133: -352576919
+      T_Chad_134: -1351891582
+      T_Chad_135: 1807082491
+      T_Chad_136: 849802271
+      T_Chad_137: 573645043
+      T_Chad_138: 1951413594
+      T_Chad_139: -599048741
+      T_Chad_14: -2023571893
+      T_Chad_140: -758571767
+      T_Chad_141: 1126763469
+      T_Chad_142: -652508486
+      T_Chad_143: 1173659430
+      T_Chad_144: -1408160327
+      T_Chad_145: -2116432536
+      T_Chad_146: -1087450735
+      T_Chad_147: -1174104288
+      T_Chad_148: -1076870745
+      T_Chad_149: -757046758
+      T_Chad_15: 1630198925
+      T_Chad_150: 455206304
+      T_Chad_151: 751916551
+      T_Chad_152: 675797323
+      T_Chad_153: 48004888
+      T_Chad_154: -162371470
+      T_Chad_155: -1736926199
+      T_Chad_156: 1870336247
+      T_Chad_16: 1653922752
+      T_Chad_161: 926398989
+      T_Chad_17: 586176932
+      T_Chad_18: 912168522
+      T_Chad_19: 954725240
+      T_Chad_2: -256996639
+      T_Chad_20: -84063201
+      T_Chad_21: -1486204744
+      T_Chad_22: -93489489
+      T_Chad_23: 116516185
+      T_Chad_24: -905098363
+      T_Chad_25: -279339309
+      T_Chad_26: 1614782242
+      T_Chad_27: 1852830800
+      T_Chad_28: 1548881968
+      T_Chad_29: 1354667765
+      T_Chad_3: 862751834
+      T_Chad_30: 503911922
+      T_Chad_31: 1050920961
+      T_Chad_32: -385914864
+      T_Chad_33: 1917946929
+      T_Chad_34: -1263848379
+      T_Chad_35: -133030280
+      T_Chad_36: 641979032
+      T_Chad_37: -1523693335
+      T_Chad_38: 2109629298
+      T_Chad_39: -233028105
+      T_Chad_4: -480290437
+      T_Chad_40: 1290628340
+      T_Chad_41: 215682639
+      T_Chad_42: -1134872381
+      T_Chad_43: -1636682972
+      T_Chad_44: -11456225
+      T_Chad_45: 2020474437
+      T_Chad_46: -195838850
+      T_Chad_47: -1536941411
+      T_Chad_48: 1026469096
+      T_Chad_5: -339986563
+      T_Chad_51: 280248022
+      T_Chad_52: 981910501
+      T_Chad_53: -733141906
+      T_Chad_54: 1869880447
+      T_Chad_55: 804990564
+      T_Chad_56: 1088322437
+      T_Chad_58: -249249098
+      T_Chad_59: -1397857338
+      T_Chad_6: 1029647312
+      T_Chad_60: 351419013
+      T_Chad_61: -1469265099
+      T_Chad_62: -627595972
+      T_Chad_63: -982931533
+      T_Chad_64: 2100625742
+      T_Chad_65: -1019244797
+      T_Chad_66: 193650138
+      T_Chad_67: 1231480332
+      T_Chad_68: -821908550
+      T_Chad_69: -2071338037
+      T_Chad_7: -1481065110
+      T_Chad_70: -1790196499
+      T_Chad_71: 1568115798
+      T_Chad_72: -1171620055
+      T_Chad_73: 1767467911
+      T_Chad_74: 1185661990
+      T_Chad_75: -1354328453
+      T_Chad_76: 536672061
+      T_Chad_77: -1088080592
+      T_Chad_78: -1311523238
+      T_Chad_79: 1489895921
+      T_Chad_8: -1753393764
+      T_Chad_80: -624854064
+      T_Chad_81: 2134665037
+      T_Chad_82: 1028739543
+      T_Chad_83: -1057617832
+      T_Chad_84: -906095999
+      T_Chad_85: -898719301
+      T_Chad_86: -632483767
+      T_Chad_87: -519338128
+      T_Chad_88: 1552039362
+      T_Chad_89: 260978762
+      T_Chad_9: 1967031116
+      T_Chad_90: 1349864859
+      T_Chad_91: 741161302
+      T_Chad_92: 92487403
+      T_Chad_93: 729531189
+      T_Chad_94: 1426777065
+      T_Chad_95: -75598872
+      T_Chad_96: 776855946
+      T_Chad_97: -1964765239
+      T_Chad_98: -74361669
+      T_Chad_99: 228678657
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

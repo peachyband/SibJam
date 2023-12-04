@@ -29,7 +29,10 @@ namespace SibJam.Features.Level.Rules
         private readonly CompositeDisposable _compositeDisposable = new ();
 
         private int _collectionProgress;
+        private GrassView _grass;
         private readonly List<CollectibleView> _spawnedCollectibles = new ();
+
+        private IDisposable _growStream;
 
         private GrassRule(LevelConfig levelConfig, SignalBus signalBus, 
             GrassFactory grassFactory, CollectibleFactory collectibleFactory,
@@ -47,19 +50,42 @@ namespace SibJam.Features.Level.Rules
         {
             _signalBus
                 .GetStream<LevelSignals.PillCollected>()
-                .Subscribe(_ =>
+                .Subscribe( _ =>
                 {
                     _collectionProgress += 1;
 
-                    if (_collectionProgress < _spawnedCollectibles.Count) return;
-                    _grassFactory.Create(_levelModel.GetCentre());
+                    if (_collectionProgress <= _spawnedCollectibles.Count) return;
+                    if (_grass != null)
+                    {
+                        _growStream?.Dispose();
+                        _grass.Dispose();
+                        _grass = null;
+                    }
                     _spawnedCollectibles.Clear();
+                    _collectionProgress = 0;
+
+                    _grass = _grassFactory.Create(_levelModel.GetCentre());
+                    _growStream = Observable
+                        .Interval(TimeSpan.FromSeconds(_levelConfig.GrassTimeout / _grass.GrowCount))
+                        .Where(_ => _grass != null)
+                        .Subscribe(_ => _grass.Grow());
                 })
                 .AddTo(_compositeDisposable);
-
+            
             _playerModel
                 .OnLevelChange()
-                .Subscribe(_ => SpawnPills())
+                .Subscribe(_ =>
+                {
+                    if (_grass != null)
+                    {
+                        _growStream?.Dispose();
+                        _grass.Dispose();
+                        _grass = null;
+                        _collectionProgress = 0;
+                    }
+                    
+                    SpawnPills();
+                })
                 .AddTo(_compositeDisposable);
         }
 

@@ -5,6 +5,7 @@
 
 using System;
 using Cysharp.Threading.Tasks;
+using SibJam.Features.Level.Signals;
 using SibJam.Features.Player.Data.Config;
 using SibJam.Features.Weapon.Models;
 using UniRx;
@@ -27,6 +28,7 @@ namespace SibJam.Features.Player.Models
         private readonly CompositeDisposable _compositeDisposable = new ();
 
         private readonly PlayerConfig _playerConfig;
+        private readonly SignalBus _signalBus;
 
         public delegate void PlayerHandler();
 
@@ -35,9 +37,10 @@ namespace SibJam.Features.Player.Models
         public event PlayerHandler OnDeath;
         public event PlayerHandler OnInteract;
         
-        private PlayerModel(PlayerConfig playerConfig)
+        private PlayerModel(PlayerConfig playerConfig, SignalBus signalBus)
         {
             _playerConfig = playerConfig;
+            _signalBus = signalBus;
         }
         
         public void Initialize()
@@ -73,8 +76,13 @@ namespace SibJam.Features.Player.Models
         public void UpgradeLevel()
         {
             var newLevel = GetLevel() + 1;
-            if (newLevel <= _playerConfig.Settings.Count)
-                PlayerSetting = _playerConfig.Settings[newLevel];
+            if (newLevel >= _playerConfig.Settings.Count)
+            {
+                _signalBus.TryFire<LevelSignals.LevelPassed>();
+                return;
+            }
+                
+            PlayerSetting = _playerConfig.Settings[newLevel];
             
             SetHealth(_playerConfig.Settings[newLevel].Health);
             SetSpeed(_playerConfig.Settings[newLevel].Speed);
@@ -86,6 +94,9 @@ namespace SibJam.Features.Player.Models
         {
             Invincible = true;
             _healthProperty.Value -= damage;
+            if (_healthProperty.Value <= 0f)
+                OnDeath?.Invoke();
+            
             await UniTask.Delay(TimeSpan.FromSeconds(PlayerSetting.DamageCooldown));
             Invincible = false;
         }
