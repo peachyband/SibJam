@@ -1,3 +1,4 @@
+using SibJam.Features.Player.Views;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -18,6 +19,7 @@ namespace SibJam.Features.Enemies
         private Collider2D _sonarCollider;
 
         private const float VRAY_LEN = 0.1f;
+       
 
         private Vector2 _vRayPoint;
 
@@ -62,6 +64,11 @@ namespace SibJam.Features.Enemies
             _rigidbody.velocity = newVelocity;
         }
 
+        /*private void Update()
+        {
+            
+        }*/
+
         private void Flip()
         {
 
@@ -85,6 +92,16 @@ namespace SibJam.Features.Enemies
             Vector2 to = new Vector2(from.x, from.y - VRAY_LEN);
 
             Gizmos.DrawLine(from, to);
+        }
+
+        private void OnCollisionStay2D(Collision2D other)
+        {
+            var player = other.gameObject.GetComponent<PlayerBase>();
+            if (player == null) return;
+
+            if (!(_damageTimer >= COOLDOWN)) return;
+            player.TakeDamage(_config.Damage);
+            _damageTimer = 0f;
         }
 
 

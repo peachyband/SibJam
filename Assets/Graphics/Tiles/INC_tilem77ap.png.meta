@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b7d993ebe516db341bc7c0351dc63dce
+guid: 8d8ab026988a2ad4b90a905888625dfa
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,91 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: T_Spike1_0
+      name: INC_tilem77ap_0
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 949
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e218fce98205cdd41a3f49741240d6ad
+      internalID: 1761963194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: INC_tilem77ap_1
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 951
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033a72fd25c3ae3418d23d39a409c57c
+      internalID: -2066580683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: INC_tilem77ap_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 955
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89722a4640e0e5241aeb570065f437fc
+      internalID: -1277699681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: INC_tilem77ap_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 471
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5607059f65191db49af9d3bd54f281b8
+      internalID: 982112639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: INC_tilem77ap_4
       rect:
         serializedVersion: 2
         x: 0
@@ -124,18 +208,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9857ae5f0cbd0e840aa3cec50c0c2c9e
-      internalID: -1938608483
+      spriteID: c6ee5acc9d1b86c499e2c08fb648610c
+      internalID: 1377365875
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: T_Spike1_1
+      name: INC_tilem77ap_5
       rect:
         serializedVersion: 2
-        x: 485
-        y: 0
+        x: 952
+        y: 465
         width: 485
         height: 485
       alignment: 0
@@ -145,8 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f90592ad4ca4eb4a81737af8d631703
-      internalID: 1407828394
+      spriteID: c70ec710a1f2b7e4795db212df576098
+      internalID: 1137263944
       vertices: []
       indices: 
       edges: []
@@ -154,7 +238,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 1ce96e570a1dced45b1193c1b9bddd53
+    spriteID: 23930aa5b8bd07742934e4b6ec6351ef
     internalID: 0
     vertices: []
     indices: 
@@ -162,8 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      T_Spike1_0: -1938608483
-      T_Spike1_1: 1407828394
+      INC_tilem77ap_0: 1761963194
+      INC_tilem77ap_1: -2066580683
+      INC_tilem77ap_2: -1277699681
+      INC_tilem77ap_3: 982112639
+      INC_tilem77ap_4: 1377365875
+      INC_tilem77ap_5: 1137263944
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: IncelSettings
   m_EditorClassIdentifier: 
   _health: 50
-  _speed: 5
+  _speed: 7
   _dashTime: 0
   _dashSpeed: 0
-  _jumpForce: 7
+  _jumpForce: 9
   _punchForce: 10
   _damageCooldown: 0.5
   _animatorController: {fileID: 9100000, guid: fd0522ce3fb4a4016be06c12a0aa3142, type: 2}

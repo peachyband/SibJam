@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <EnemyReddit>k__BackingField: {fileID: 2994905023976598444, guid: 356097f0e2f052f41b8edc1d7ae1d55a,
     type: 3}
-  <RedditPerLevelCount>k__BackingField: 020000000300000004000000
+  <RedditPerLevelCount>k__BackingField: 030000000600000007000000
   <Enemy4chan>k__BackingField: {fileID: 300489648865316388, guid: f50ef42931365cc4093722836554c82c,
     type: 3}
-  <FChanPerLevelCount>k__BackingField: 000000000100000002000000
+  <FChanPerLevelCount>k__BackingField: 010000000300000005000000

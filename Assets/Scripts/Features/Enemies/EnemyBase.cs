@@ -9,5 +9,14 @@ namespace SibJam.Features.Enemies
     {
         [SerializeField]
         protected EnemyConfig _config;
+
+        protected const float COOLDOWN = 1F;
+        protected float _damageTimer;
+
+
+        private void Update()
+        {
+            _damageTimer += Time.deltaTime;         
+        }
     }
 }

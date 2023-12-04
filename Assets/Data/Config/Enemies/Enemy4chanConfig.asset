@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Health>k__BackingField: 1
   <Damage>k__BackingField: 20
-  <Speed>k__BackingField: 15
+  <Speed>k__BackingField: 4
   <LayerMask>k__BackingField:
     serializedVersion: 2
     m_Bits: 0

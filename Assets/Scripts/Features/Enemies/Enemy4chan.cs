@@ -1,3 +1,4 @@
+using SibJam.Features.Player.Views;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -32,6 +33,16 @@ namespace SibJam.Features.Enemies
                 _index = 0;
             }
  
+        }
+
+        private void OnTriggerStay2D(Collider2D other)
+        {
+            var player = other.GetComponent<PlayerBase>();
+            if (player == null) return;
+
+            if (!(_damageTimer >= COOLDOWN)) return;
+            player.TakeDamage(_config.Damage);
+            _damageTimer = 0f;
         }
     }
 }
