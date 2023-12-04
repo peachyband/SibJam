@@ -16,7 +16,7 @@ namespace SibJam.Bootstrap
     public class MainInstaller : MonoInstaller
     {
         [SerializeField] private CanvasPresenter _canvasPresenter;
-        [SerializeField] private Camera _mainCamera;
+        //[SerializeField] private Camera _mainCamera;
         public override void InstallBindings()
         {
             SignalBusInstaller.Install(Container);
@@ -30,7 +30,7 @@ namespace SibJam.Bootstrap
         private void InstallInstances()
         {
             Container.Bind<CanvasPresenter>().FromInstance(_canvasPresenter);
-            Container.Bind<Camera>().FromInstance(_mainCamera);
+           // Container.Bind<Camera>().FromInstance(_mainCamera);
         }
     }
 }

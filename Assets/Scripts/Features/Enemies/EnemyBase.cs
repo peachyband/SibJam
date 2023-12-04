@@ -18,5 +18,10 @@ namespace SibJam.Features.Enemies
         {
             _damageTimer += Time.deltaTime;         
         }
+
+        public void Kill() 
+        {
+            Destroy(gameObject);
+        }
     }
 }
