@@ -615,7 +615,7 @@ GameObject:
   - component: {fileID: 8741743487192232137}
   - component: {fileID: 3219019772098619290}
   m_Layer: 0
-  m_Name: GreetingWindow
+  m_Name: WinWindow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

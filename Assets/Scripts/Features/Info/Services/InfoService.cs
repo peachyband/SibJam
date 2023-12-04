@@ -6,9 +6,11 @@
 using SibJam.Features.Info.Data;
 using SibJam.Features.Info.Factories;
 using SibJam.Features.Info.Views;
+using SibJam.Features.Player.Signals;
 using SibJam.Features.UI;
 using UniRx;
 using UnityEngine;
+using Zenject;
 
 namespace SibJam.Features.Info.Services
 {
@@ -20,12 +22,15 @@ namespace SibJam.Features.Info.Services
         private readonly WindowFactory _windowFactory;
         private readonly Camera _camera;
 
+        private readonly SignalBus _signalBus;
+
         private InfoService(CanvasPresenter canvasPresenter,
             WindowFactory windowFactory,
-            Camera camera)
+            Camera camera, SignalBus signalBus)
         {
             _canvasPresenter = canvasPresenter;
             _windowFactory = windowFactory;
+            _signalBus = signalBus;
             _camera = camera;
         }
         
@@ -33,15 +38,17 @@ namespace SibJam.Features.Info.Services
         {
             if (_currentWindow != null) return;
             var window = _windowFactory.Create(type, _canvasPresenter.InfoHolder);
+            _signalBus.TryFire(new PlayerSignals.ToggleControls(false));
             _currentWindow = window;
-            Time.timeScale = 1f;
+            Time.timeScale = 0f;
             
             window.OnClick()
                 .Subscribe(_ =>
                 {
-                    Time.timeScale = 1f;
                     _currentWindow.Dispose();
                     _currentWindow = null;
+                    Time.timeScale = 1f;
+                    _signalBus.TryFire(new PlayerSignals.ToggleControls(true));
                 });
         }
     }

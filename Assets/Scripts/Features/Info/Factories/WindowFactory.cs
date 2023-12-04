@@ -27,6 +27,7 @@ namespace SibJam.Features.Info.Factories
             var window = _container.InstantiatePrefabForComponent<WindowPresenter>(
                 _infoConfig.GetWindowByType(type));
             window.transform.SetParent(holder);
+            window.RectTransform.anchoredPosition = Vector2.zero;
             return window;
         }
     }
