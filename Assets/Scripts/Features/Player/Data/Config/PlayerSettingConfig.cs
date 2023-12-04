@@ -3,6 +3,7 @@
 // All Rights Reserved
 // [2020]-[2023].
 
+using SibJam.Features.Weapon.Data;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -17,6 +18,7 @@ namespace SibJam.Features.Player.Data.Config
         [SerializeField] private float _dashSpeed;
         [SerializeField] private float _jumpForce;
         [SerializeField] private float _punchForce;
+        [SerializeField] private WeaponType _weapon;
         [SerializeField] private float _damageCooldown;
         [SerializeField] private RuntimeAnimatorController _animatorController;
 
@@ -30,6 +32,7 @@ namespace SibJam.Features.Player.Data.Config
         public int Health => _health;
         public float Speed => _speed;
         public float DashTime => _dashTime;
+        public WeaponType Weapon => _weapon;
         public float DashSpeed => _dashSpeed;
         public float JumpForce => _jumpForce;
         public float PunchForce => _punchForce;

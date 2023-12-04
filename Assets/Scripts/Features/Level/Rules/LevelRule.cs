@@ -35,11 +35,11 @@ namespace SibJam.Features.Level.Rules
             _playerConfig = playerConfig;
         }
 
-        public void Initialize()
+        public async void Initialize()
         {
             _signalBus.TryFire(new PlayerSignals.ToggleControls(true));
             _infoService.ShowWindow(WindowType.GreetingWindow);
-
+            
             _playerModel.OnDeath += () => _infoService
                 .ShowWindow(WindowType.GameOverWindow);
 
@@ -62,6 +62,20 @@ namespace SibJam.Features.Level.Rules
                 .GetStream<LevelSignals.GrassTouched>()
                 .Subscribe(_ => _playerModel.UpgradeLevel())
                 .AddTo(_compositeDisposable);
+
+            _playerModel
+                .OnLevelChange()
+                .Subscribe(level =>
+                {
+                    if (level == 1)
+                        _infoService.ShowWindow(WindowType.DashTutorialWindow);
+                    else if (level == 2)
+                        _infoService.ShowWindow(WindowType.GrenadeTutorialWindow);
+                })
+                .AddTo(_compositeDisposable);
+
+            await UniTask.WaitUntil(() => !_infoService.IsPresenting());
+            _infoService.ShowWindow(WindowType.MovementTutorialWindow);
         }
 
         public void Dispose()

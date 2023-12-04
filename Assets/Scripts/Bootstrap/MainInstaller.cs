@@ -7,6 +7,7 @@ using SibJam.Features.Info.Installers;
 using SibJam.Features.Level.Installers;
 using SibJam.Features.Player.Installers;
 using SibJam.Features.UI;
+using SibJam.Features.Weapon.Installers;
 using UnityEngine;
 using Zenject;
 
@@ -21,6 +22,7 @@ namespace SibJam.Bootstrap
             SignalBusInstaller.Install(Container);
             Container.Install<PlayerInstaller>();
             Container.Install<LevelInstaller>();
+            Container.Install<WeaponInstaller>();
             Container.Install<InfoInstaller>();
             InstallInstances();
         }

@@ -7,8 +7,12 @@ using System;
 using Cysharp.Threading.Tasks;
 using SibJam.Features.Level.Signals;
 using SibJam.Features.Player.Data.Config;
+using SibJam.Features.Weapon.Data;
+using SibJam.Features.Weapon.Data.Config;
+using SibJam.Features.Weapon.Factories;
 using SibJam.Features.Weapon.Models;
 using UniRx;
+using UnityEngine;
 using Zenject;
 
 namespace SibJam.Features.Player.Models
@@ -16,6 +20,7 @@ namespace SibJam.Features.Player.Models
     public class PlayerModel : IInitializable, IDisposable
     {
         public bool Invincible { get; private set; }
+        public Vector2 CurrentPosition { get; private set; }
         public PlayerSettingConfig PlayerSetting { get; private set; }
         public float MoveDirection => _moveDirectionProperty.Value;
 
@@ -28,6 +33,8 @@ namespace SibJam.Features.Player.Models
         private readonly CompositeDisposable _compositeDisposable = new ();
 
         private readonly PlayerConfig _playerConfig;
+        private readonly WeaponModelFactory _weaponModelFactory;
+        private readonly WeaponConfig _weaponConfig;
         private readonly SignalBus _signalBus;
 
         public delegate void PlayerHandler();
@@ -37,9 +44,12 @@ namespace SibJam.Features.Player.Models
         public event PlayerHandler OnDeath;
         public event PlayerHandler OnInteract;
         
-        private PlayerModel(PlayerConfig playerConfig, SignalBus signalBus)
+        private PlayerModel(PlayerConfig playerConfig, SignalBus signalBus, 
+            WeaponConfig weaponConfig, WeaponModelFactory weaponModelFactory)
         {
             _playerConfig = playerConfig;
+            _weaponConfig = weaponConfig;
+            _weaponModelFactory = weaponModelFactory;
             _signalBus = signalBus;
         }
         
@@ -86,7 +96,10 @@ namespace SibJam.Features.Player.Models
             
             SetHealth(_playerConfig.Settings[newLevel].Health);
             SetSpeed(_playerConfig.Settings[newLevel].Speed);
-            
+
+            if (PlayerSetting.Weapon != WeaponType.None)
+                _weaponProperty.Value = _weaponModelFactory.Create(
+                    _weaponConfig.GetDataByType(PlayerSetting.Weapon));
             _levelProperty.Value = newLevel;
         }
 
@@ -115,7 +128,17 @@ namespace SibJam.Features.Player.Models
         {
             return _healthProperty.AsObservable();
         }
+        
+        public IObservable<WeaponModel> OnEquipWeapon()
+        {
+            return _weaponProperty.AsObservable();
+        }
 
+        public void SetPosition(Vector2 position)
+        {
+            CurrentPosition = position;
+        }
+        
         public float GetSpeed()
         {
             return _speedProperty.Value;

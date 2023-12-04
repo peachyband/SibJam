@@ -80,7 +80,7 @@ namespace SibJam.Features.Enemies
             );
             transform.localScale = newScale;
         }
-
+        
         private void OnDrawGizmos()
         {
             Gizmos.color = Color.white;

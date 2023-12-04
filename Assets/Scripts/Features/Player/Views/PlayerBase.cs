@@ -10,6 +10,8 @@ using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using SibJam.Base;
 using SibJam.Features.Player.Models;
+using SibJam.Features.Weapon.Factories;
+using SibJam.Features.Weapon.Views;
 using UniRx;
 using UnityEngine;
 using Zenject;
@@ -29,7 +31,8 @@ namespace SibJam.Features.Player.Views
         [SerializeField] private AudioSource _audioSource;
         [SerializeField] private CircleCollider2D _interaction;
         [SerializeField] private SpriteRenderer _spriteRenderer;
-        
+
+        private WeaponViewFactory _weaponViewFactory;
         private PlayerModel _model;
         private float _originalGravity;
         private int _jumpCount;
@@ -40,10 +43,13 @@ namespace SibJam.Features.Player.Views
         private static readonly int Health = Animator.StringToHash("Health");
         private static readonly int IsDash = Animator.StringToHash("Dash");
 
+        private WeaponBase _weapon;
+
         [Inject]
-        public void Construct(PlayerModel model)
+        public void Construct(PlayerModel model, WeaponViewFactory weaponViewFactory)
         {
             _model = model;
+            _weaponViewFactory = weaponViewFactory;
         }
         
         protected void Awake()
@@ -65,6 +71,18 @@ namespace SibJam.Features.Player.Views
 
                     _audioSource.clip = _model.PlayerSetting.LevelUpSound;
                     _audioSource.Play();
+                })
+                .AddTo(this);
+
+            _model
+                .OnEquipWeapon()
+                .Where(model => model != null)
+                .Subscribe(model =>
+                {
+                    if (_weapon != null)
+                        _weapon.Dispose();
+                    _weapon = _weaponViewFactory.Create(model);
+                    _weapon.transform.SetParent(transform);
                 })
                 .AddTo(this);
 
@@ -135,6 +153,7 @@ namespace SibJam.Features.Player.Views
                 _rigidbody.velocity.y);
             transform.localScale = Mathf.Sign(_model.MoveDirection) * Vector2.right + Vector2.up;
             _animator.SetFloat(Speed, Mathf.Abs(_rigidbody.velocity.x));
+            _model.SetPosition(transform.position);
         }
 
         private void Jump()

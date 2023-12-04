@@ -83,6 +83,12 @@ namespace SibJam.Features.Player.Rules
                 .Where(_ => Input.GetKeyDown(_playerConfig.InteractionKey))
                 .Subscribe(_ => _playerModel.Interact())
                 .AddTo(_controlsDisposable);
+            
+            Observable
+                .EveryUpdate()
+                .Where(_ => Input.GetKeyDown(_playerConfig.FireKey))
+                .Subscribe(_ => _playerModel.Attack())
+                .AddTo(_controlsDisposable);
         }
 
         private void DisableControls()
