@@ -5,7 +5,7 @@
 
 namespace SibJam.Features.Player.Views
 {
-    public class IncelPlayer : PlayerBase
+    public class SimplePlayer : PlayerBase
     {
         
     }

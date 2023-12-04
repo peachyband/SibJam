@@ -4,6 +4,7 @@
 // [2020]-[2023].
 
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace SibJam.Features.Player.Data.Config
 {
@@ -22,8 +23,8 @@ namespace SibJam.Features.Player.Data.Config
         [SerializeField] private AudioClip _hurtSound;
         [SerializeField] private AudioClip _jumpSound;
         [SerializeField] private AudioClip _fallSound;
-        [SerializeField] private AudioClip _attackSound;
         [SerializeField] private AudioClip _levelUpSound;
+        [SerializeField] private AudioClip _interactionSound;
 
         public int Health => _health;
         public float Speed => _speed;
@@ -37,7 +38,7 @@ namespace SibJam.Features.Player.Data.Config
         public AudioClip JumpSound => _jumpSound;
         public AudioClip FallSound => _fallSound;
         public AudioClip HurtSound => _hurtSound;
-        public AudioClip AttackSound => _attackSound;
         public AudioClip LevelUpSound => _levelUpSound;
+        public AudioClip InteractionSound => _interactionSound;
     }
 }

@@ -5,22 +5,18 @@
 
 using SibJam.Features.Player.Models;
 using SibJam.Features.Player.Services;
-using SibJam.Features.Player.Views;
-using UnityEngine;
+using SibJam.Features.Player.Signals;
 using Zenject;
 
 namespace SibJam.Features.Player.Installers
 {
-    public class PlayerInstaller : MonoInstaller
+    public class PlayerInstaller : Installer
     {
-        [SerializeField] private PlayerBase _player;
-
         public override void InstallBindings()
         {
-            Container.Bind<PlayerBase>().FromInstance(_player);
-            
             InstallModels();
             InstallRules();
+            InstallSignals();
         }
         
         private void InstallModels()
@@ -33,5 +29,9 @@ namespace SibJam.Features.Player.Installers
             Container.BindInterfacesTo<PlayerControlRule>().AsSingle();
         }
 
+        private void InstallSignals()
+        {
+            Container.DeclareSignal<PlayerSignals.ToggleControls>();
+        }
     }
 }

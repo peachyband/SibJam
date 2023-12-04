@@ -3,10 +3,10 @@
 // All Rights Reserved
 // [2020]-[2023].
 
-namespace SibJam.Features.Player.Views
+namespace SibJam.Base
 {
-    public class ManPlayer : PlayerBase
+    public interface IInteractable
     {
-        
+        public void Interact();
     }
 }

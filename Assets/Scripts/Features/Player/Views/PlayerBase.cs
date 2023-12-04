@@ -4,6 +4,8 @@
 // [2020]-[2023].
 
 using System.Collections;
+using System.Linq;
+using SibJam.Base;
 using SibJam.Features.Player.Models;
 using UniRx;
 using UnityEngine;
@@ -14,22 +16,26 @@ namespace SibJam.Features.Player.Views
     public abstract class PlayerBase : MonoBehaviour
     {
         private static readonly int MaxJumps = 2;
-        public bool Invincible => _model.Invincible;
+        private bool _invincible => _model.Invincible;
 
-        [SerializeField] private AudioSource _audioSource;
+        [SerializeField] private Animator _animator;
         [SerializeField] private Transform _groundCheck;
         [SerializeField] private LayerMask _groundLayer;
         [SerializeField] private Rigidbody2D _rigidbody;
-        [SerializeField] private Animator _animator;
+        [SerializeField] private AudioSource _audioSource;
+        [SerializeField] private CircleCollider2D _interaction;
         
         private PlayerModel _model;
         private float _originalGravity;
         private int _jumpCount; 
         
         private bool _isDashing;
+        private static readonly int JumpPath = Animator.StringToHash("JumpPath");
+        private static readonly int Speed = Animator.StringToHash("Speed");
+        private static readonly int Health = Animator.StringToHash("Health");
 
         [Inject]
-        protected void Construct(PlayerModel model)
+        public void Construct(PlayerModel model)
         {
             _model = model;
         }
@@ -37,6 +43,11 @@ namespace SibJam.Features.Player.Views
         protected void Awake()
         {
             _originalGravity = _rigidbody.gravityScale;
+
+            _model.OnJump += Jump;
+            _model.OnDash += MakeDash;
+            _model.OnInteract += Interact;
+            _model.OnDeath += () => Destroy(gameObject);
             
             _model
                 .OnLevelChange()
@@ -53,22 +64,31 @@ namespace SibJam.Features.Player.Views
 
             _model
                 .OnHealthChange()
-                .Subscribe()
+                .Subscribe(health => _animator.SetInteger(Health, health))
                 .AddTo(this);
-
-            _model.OnJump += Jump;
-            _model.OnDash += MakeDash;
-
-            _model
-                .OnHealthChange()
-                .Subscribe(health => _animator.SetInteger("Health", health))
-                .AddTo(this);
-
-            _model.OnDeath += () => Destroy(gameObject);
         }
 
+        private void Interact()
+        {
+            var colliders = Physics2D.OverlapCircleAll(
+                _interaction.transform.position, _interaction.radius);
+
+            var interactables = colliders
+                .Select(other => other.GetComponent<IInteractable>())
+                .ToList();
+            if (!interactables.Any()) return;
+
+            var interactable = interactables.First();
+            if (interactable == null) return;
+            
+            interactable.Interact();
+            _audioSource.clip = _model.PlayerSetting.InteractionSound;
+            _audioSource.Play();
+        } 
+        
         public async void TakeDamage(int damage)
         {
+            if (_invincible) return;
             _audioSource.clip = _model.PlayerSetting.HurtSound;
             _audioSource.Play();
             await _model.TakeDamage(damage);
@@ -79,14 +99,14 @@ namespace SibJam.Features.Player.Views
             if (IsGrounded())
             {
                 _jumpCount = MaxJumps;
-                _animator.SetInteger("JumpPath", 0);
+                _animator.SetInteger(JumpPath, 0);
             }
 
             if (_rigidbody.velocity.y > 0f)
-                _animator.SetInteger("JumpPath", 1);
+                _animator.SetInteger(JumpPath, 1);
             else if (_rigidbody.velocity.y < 0f)
             {
-                _animator.SetInteger("JumpPath", 2);
+                _animator.SetInteger(JumpPath, 2);
                 _audioSource.clip = _model.PlayerSetting.FallSound;
                 _audioSource.Play();
             }
@@ -95,7 +115,7 @@ namespace SibJam.Features.Player.Views
             _rigidbody.velocity = new Vector2(_model.MoveDirection * _model.GetSpeed(),
                 _rigidbody.velocity.y);
             transform.localScale = Mathf.Sign(_model.MoveDirection) * Vector2.right + Vector2.up;
-            _animator.SetFloat("Speed", Mathf.Abs(_rigidbody.velocity.x));
+            _animator.SetFloat(Speed, Mathf.Abs(_rigidbody.velocity.x));
         }
 
         private void Jump()

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e9e1122ca214808b3537d72b6d86451, type: 3}
+  m_Name: LevelConfig
+  m_EditorClassIdentifier: 
+  _pillsTimeout: 10
+  _collectiblesToGet: 4
+  _collectiblePool:
+  - {fileID: 3349908188865885273, guid: d9cb9ee2ad63246399b74ca18a62467a, type: 3}
+  _grassView: {fileID: -3248273683305694119, guid: e454c4b33cc754d1f921170f3a51007d,
+    type: 3}
